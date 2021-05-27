@@ -111,15 +111,6 @@ nav {
 
 }
 
-@media (min-width: 900px) {
-    nav {
-        height: 80px;
-        padding-left: 100px;
-        padding-right: 100px;
-    
-    }
-}
-
 nav .logo {
     height: 24px;
     width: 24px;
@@ -132,24 +123,10 @@ nav .logo img {
     height: 100%;
 }
 
-@media (min-width: 900px) {
-    nav .logo {
-        height: 36px;
-        width: 36px;
-        margin-left: 0px;
-
-    }
-}
 
 .buttons {
     z-index: 1;
     margin-right: 16px;
-}
-
-@media (min-width: 720px) {
-    .buttons {
-        display: none;
-    }
 }
 
 #menu {
@@ -191,6 +168,26 @@ nav ul {
 }
 
 @media (min-width: 900px) {
+    .buttons {
+        display: none;
+    }
+    nav {
+        max-width: 100%;
+        height: 80px;
+        padding-left: 100px;
+        padding-right: 100px;
+    
+    }
+
+    nav .logo {
+        height: 36px;
+        width: 36px;
+        margin-left: 0px;
+
+    }
+    .containerul{
+        width: 700px;
+    }
     nav ul {
         margin-left: 0px;
         display: flex;
