@@ -1,8 +1,6 @@
 # Ignores
-\.DS_Store
-\.classpath
-\.project
-\.settings
-\.metadata/
-Servers/
-target/
+.DS_Store
+node_modules
+jspm_packages
+*.txt
+.env
