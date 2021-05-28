@@ -210,7 +210,7 @@ nav ul li a {
 
     }
     .containerul{
-        width: 690px;
+        width: 630px;
     }
     nav ul {
         margin-left: 0px;
@@ -219,8 +219,8 @@ nav ul li a {
         position: relative;
         background-color: #FFFFFF;
         transition: none;
-        margin-right: 20px;
-        padding-right: 50px;
+        /* margin-right: 20px; */
+        /* padding-right: 50px; */
         justify-content: end;
         max-width: 100%;
     }
@@ -282,7 +282,7 @@ header p:nth-of-type(2) {
 /* HEADER DESKTOP */
 @media (min-width: 900px) {
     header {
-        padding-top: 220px;
+        padding-top: 200px;
     }
 
     header h1 {
