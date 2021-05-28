@@ -144,7 +144,8 @@ nav .buttons .labelmenu span {
     transition: 0.5s all;
 }
 .containerul{
-padding-left: 0px;}
+padding-left: 0px;
+}
 nav ul {
     list-style-type: none;
     background-color: #0000EC;
@@ -196,7 +197,7 @@ nav ul li a {
         display: none;
     }
     nav {
-        max-width: 100%;
+        max-width: 90%;
         height: 80px;
         padding-left: 100px;
         padding-right: 100px;
@@ -219,7 +220,7 @@ nav ul li a {
         background-color: #FFFFFF;
         transition: none;
         margin-right: 20px;
-        padding-right: 20px;
+        padding-right: 50px;
         justify-content: end;
         max-width: 100%;
     }
@@ -394,79 +395,95 @@ header p:nth-of-type(2) {
         font-size: 16px;
         line-height: 24px;
         margin-top: 11px;
+        
     }
     .about img {
-        height: 660px;
-        width: 457px;
-        margin-right: 63px;
-        margin-top: -100px;
+        height: 50%;
+        width: 50%px;
+        margin-top: -150px;
+    }
+}
+
+@media (min-width: 1200px){
+.about img {
+    height: 50%;
+    width: 457px;
+    margin-right: 63px;
+    margin-top: -100px;
     }
 }
 
 /* INTERVIEWS MOBILE */
 .interviews {
-    flex-wrap: wrap;
     padding-bottom: 45px;
 }
 .interviews h2 {
     padding-top: 3px;
     padding-bottom: 13px;
 }
-.container_img {
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.interviews img {
-    width: 100%;
+.container_img{
+    flex-flow: wrap ;
 }
 
+.interviews img {
+    width: 100%;
+    }
+
 /* INTERVIEWS DESKTOP*/
-@media (min-width: 900px) {
+@media (min-width: 600px) {
     .interviews img {
-        width: 33.3%;
+        width: 50%;
+        }
+    }
+
+@media (min-width: 900px) {
+
+.interviews img {
+    width: 33.3%;
     }
 }
 
 /* TOPICS MOBILE */
-.topics {
+.topics p {
     font-weight: 600;
-    /*semibold*/
     font-size: 24px;
 }
 .container_topics {
     padding-top: 37px;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .topics_img_p {
     padding-bottom: 49px;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    padding: 0px 5%;
+    padding: 0px 30px;
+    flex-wrap: wrap;
+    width: 150px;
 }
+
 .topics img {
     width: 104px;
-    height: 104px;
     padding-bottom: 13px;
 }
 
 /* TOPICS DESKTOP */
 @media (min-width: 900px) {
+    .topics_img_p {
+        width: 120px;
+    }
     .container_topics {
-        flex-direction: row;
         padding-top: 37px;
-        padding-left: 220px;
-        padding-right: 220px;
-        justify-content: space-around;
+        padding-left: 80px;
+        padding-right: 80px;
     }
-    .topics_img_p {
-        width: 80%;
-    }
-    .topics img {
-        width: 80%;
-    }
-    .topics_img_p {
-        width: 80%;
+}
+
+@media (min-width: 1200px) {
+       .container_topics {
+        padding-left: 140px;
+        padding-right: 140px;
     }
 }
 
