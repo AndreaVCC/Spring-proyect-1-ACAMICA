@@ -383,14 +383,16 @@ header p:nth-of-type(2) {
     margin-top: 11px;
 }
 
+
 /* ABOUT DESKTOP */
 @media (min-width: 900px) {
     .about {
         flex-direction: row;
-        padding-left: 200px;
-        padding-right: 200px;
-        justify-content: center;
+        padding-left: 100px;
+        padding-right: 100px; 
+        justify-content: space-evenly;
     }
+  
     .about p {
         font-size: 16px;
         line-height: 24px;
@@ -398,15 +400,25 @@ header p:nth-of-type(2) {
         
     }
     .about img {
-        height: 50%;
-        width: 50%px;
-        margin-top: -150px;
+        max-height: 660px;
+        margin-top: -50px;
+    }
+}
+@media (min-width: 1200px) {
+    .about {
+        padding-left: 200px;
+        padding-right: 200px; 
+        justify-content: space-evenly;
+    }
+    .about div {
+        margin-left: 62.4px;
+        max-width: 464px;
     }
 }
 
 @media (min-width: 1200px){
 .about img {
-    height: 50%;
+    height: 660px;
     width: 457px;
     margin-right: 63px;
     margin-top: -100px;
